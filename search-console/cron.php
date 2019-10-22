@@ -1,7 +1,7 @@
 <?php
 
-$ch = curl_init("https://netcats-analytics.space/search-console/parser-1.php");
-$fp = fopen("result-1.php", "w");
+$ch = curl_init("path/to/the/query.php");
+$fp = fopen("result.php", "w");
 
 curl_setopt($ch, CURLOPT_FILE, $fp);
 curl_setopt($ch, CURLOPT_HEADER, 0);
