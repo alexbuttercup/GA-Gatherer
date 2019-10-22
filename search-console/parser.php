@@ -39,9 +39,9 @@ foreach($slice1 as $value) {
 	$gotInfo = $serviceWebmasters->searchanalytics->query('https://'.$value, $postBody)['rows'];
 	if(! empty($gotInfo)) {
 		for($i = 0; $i <= 10; $i++) {
-            if(empty($gotInfo[$i]['keys'][2])) {
-            	break;
-            }
+			if(empty($gotInfo[$i]['keys'][2])) {
+			break;
+			}
 			echo '<tr class="site-row"><td class="cell">' . $gotInfo[$i]['keys'][2] . '</td><td class="cell">' . $gotInfo[$i]['keys'][0] . '</td><td class="cell">' . round($gotInfo[$i]['position'], 2) . '</td><td class="cell">' . $gotInfo[$i]['clicks'] . '</td><td class="cell">' . $gotInfo[$i]['impressions'] . '</td></tr>';
 		}
 	}
