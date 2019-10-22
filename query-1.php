@@ -79,6 +79,6 @@ foreach($netPull as $key => $value) {
 	usleep(70); //decreasing delays between next query
 }
 
-echo '<p style="font-size: 12px; color: #fff;">Analytics gathered by: '.round(microtime(true) - $start, 4).' seconds</p>';
+echo '<p>Analytics gathered by: '.round(microtime(true) - $start, 4).' seconds</p>';
 
 ?>
