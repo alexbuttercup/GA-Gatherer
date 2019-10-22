@@ -1,0 +1,22 @@
+.container .row {
+  width: 90%;
+}
+table th:first-child, table td.cell:first-child {
+  width: 40%;
+}
+table th:nth-child(2), table td.cell:nth-child(2) {
+  width: 30%;
+}
+table th:nth-child(3), table th:nth-child(4), table th:nth-child(5),
+table td.cell:nth-child(3), table td.cell:nth-child(4), table td.cell:nth-child(5) {
+  width: 10%;
+}
+table td.cell:nth-child(5) {
+  text-align: center;
+}
+tr.row-header, tr.site-row {
+  justify-content: flex-start;
+}
+.cell {
+  height: auto;
+}
