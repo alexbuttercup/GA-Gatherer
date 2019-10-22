@@ -33,7 +33,7 @@ $postBody = new Google_Service_Webmasters_SearchAnalyticsQueryRequest( [
 'startRow' => 0
 ] );
 
-$slice1 = array_slice( $domains, 0, 120, true);
+$slice1 = array_slice( $domains, 0, NULL, true);
 
 foreach($slice1 as $value) {
 	$gotInfo = $serviceWebmasters->searchanalytics->query('https://'.$value, $postBody)['rows'];
